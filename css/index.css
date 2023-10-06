@@ -4,14 +4,12 @@
 } 
 
 .bg{
-    /* background-image: url('https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80'); */
-     background-image: url("../img/img1.png");
-
+    background-image: url('https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80');
+     /* background-image: url("..img/img1.png"); */
      width: 100%;
      height: 100vh;
 
      background-size: cover;
-     position: absolute;
  }
 
  .check-bookings{
@@ -22,8 +20,6 @@
      height: 75vh;
 
      background-size: cover;
-     top:500px;
-     position:absolute;
  }
 
  .footer{
@@ -31,15 +27,12 @@
      background-color: #13284A;
      width: 100%;
      height: 25vh;
-     position: relative;
  }
 
 
 
  .header{
     font-family:"Croissant One", Verdana, Geneva, Tahoma, sans-serif;
-
-
 
  }
 
