@@ -4,6 +4,16 @@
 
 }
 
+.head{
+  
+    background-image: url('https://unsplash.com/photos/a-close-up-of-a-cars-headlights-on-a-street-ATYKn8yEBRs');
+     
+     width: 100%;
+     height: 100vh;
+
+     background-size: cover;
+ }
+}
 .wrapper .text {
   background: #3f9cc1;
   padding: "50px";
