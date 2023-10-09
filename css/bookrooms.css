@@ -46,7 +46,9 @@ a{
     font-family: 'Roboto','Times New Roman', Times, serif;
     text-align: center;
     font-size: 150px;
-    padding-top: 230px;
+    /* padding-top: 230px;  */
+    padding-top: 11%;
+
 }
 
 a {
