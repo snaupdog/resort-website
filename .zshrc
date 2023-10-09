@@ -1,0 +1,4 @@
+prompt='nikitha:%1~/  %#'
+
+
+
