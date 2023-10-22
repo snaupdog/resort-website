@@ -5,16 +5,32 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-
-
+import ErrorPage from "./error-page";
 import Root from "./routes/root";
+import Contact from "./routes/contact";
+import Facilities from "./routes/facilities";
+
+
+
+
+
+
+
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />, 
+      errorElement: <ErrorPage />,
   },
+
+  {
+    path: "contacts/:contactId",
+    element: <Contact />,
+  },
+
 
 ]);
 
