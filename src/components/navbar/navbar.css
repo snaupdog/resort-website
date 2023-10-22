@@ -1,0 +1,28 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar {
+  font-family: "Croissant One", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  /* background-color: #dddddd; */
+  list-style-type: none;
+  display: block;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: right;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.navbar a {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+}
