@@ -9,6 +9,7 @@ import ErrorPage from "./error-page";
 import Root from "./routes/root";
 import Contact from "./routes/contact";
 import Facilities from "./routes/facilities";
+import Bookings from "./routes/bookings";
 
 
 
@@ -27,11 +28,19 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "contacts/:contactId",
+    path: "/contacts",
     element: <Contact />,
   },
 
+  {
+    path: "/facilities",
+    element: <Facilities />,
+  },
 
+  {
+    path: "/bookings",
+    element: <Bookings />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

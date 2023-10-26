@@ -6,10 +6,14 @@
 
 .navbar {
   font-family: "Croissant One", Verdana, Geneva, Tahoma, sans-serif;
+  position :absolute;
+  top:0px;
+  left:0px;
 }
 
 ul {
   /* background-color: #dddddd; */
+
   list-style-type: none;
   display: block;
   overflow: hidden;

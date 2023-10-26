@@ -12,12 +12,12 @@ export default function Header() {
       <Navbar />
 
        <motion.h4
-       initial={{ x:0}}
-       animate={{ x:200}}
+       initial={{ opacity:0}}
+       animate={{ opacity:1, scale:7,}}
 
        transition={{
          type: "tween",
-         duration: "2",
+         duration: "1",
          delay: "1"
 
        }}

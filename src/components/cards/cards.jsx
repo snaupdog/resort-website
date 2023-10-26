@@ -1,5 +1,6 @@
 import "./cards.css";
 import { motion } from "framer-motion";
+import svgImage1 from "./arrow.svg";
 
 export default function Cards() {
   const CardVariants = {
@@ -11,20 +12,12 @@ export default function Cards() {
       transition: {
         duration: 0.7, // Set your desired duration in seconds
       },
-    },
+    }
   };
 
   const TextVariants = {
-    hidden: { opacity: 0, y: 400 },
-    visible: {
-      opacity: 1,
-
-      y: 202,
-
-      transition: {
-        duration: 0.7, // Set your desired duration in seconds
-      },
-    },
+      hidden: { opacity: 0, scale: 4 ,y:-59},
+    visible: { opacity: 1, scale: 3 ,y:0},
   };
 
   return (
@@ -36,20 +29,20 @@ export default function Cards() {
           initial="beforeHover"
           whileHover="onHover"
         >
-          <motion.div
-            className="text"
-            variants={TextVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            Text that appears on hover
-          </motion.div>
         </motion.div>
+          <motion.h1 className="appear-text" variants={TextVariants} initial='hidden' whileHover='visible'>
+            Please <br></br> show
+          </motion.h1>
+
       </div>
+
+
+
+
 
       <div className="box2">
         <motion.div
-          class="backdrop"
+          className="backdrop"
           variants={CardVariants}
           initial="beforeHover"
           whileHover="onHover"
@@ -58,7 +51,7 @@ export default function Cards() {
 
       <div className="box3">
         <motion.div
-          class="backdrop"
+          className="backdrop"
           variants={CardVariants}
           initial="beforeHover"
           whileHover="onHover"
@@ -67,7 +60,7 @@ export default function Cards() {
 
       <div className="box4">
         <motion.div
-          class="backdrop"
+          className="backdrop"
           variants={CardVariants}
           initial="beforeHover"
           whileHover="onHover"
