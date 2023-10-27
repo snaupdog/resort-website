@@ -1,12 +1,11 @@
 import Navbar from "../components/navbar/navbar.jsx";
-
 import Footer from "../components/footer/footer.jsx";
 import Form from "../components/form/form.jsx";
-
 import "../styles/contact.css";
-
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const contactData = [
   {
     name: "YANA VILLAS BALI",
@@ -44,45 +43,34 @@ function ContactBox({ name, phone, email }) {
   return (
     <div className="contact-box">
       <h3>{name}</h3>
-      <p>Phone: {phone}</p>
-      <p>Email: {email}</p>
+      <p>
+        <FontAwesomeIcon icon={faPhone} /> {phone}
+      </p>
+      <p>
+        <FontAwesomeIcon icon={faEnvelope} /> {email}
+      </p>
     </div>
   );
 }
 
-
 export default function Contact() {
   return (
-      <>
-
+    <>
       <Navbar />
 
-      <div className="header-contact">Contact us</div>
-
+      <div className="header-contact">Contact us pls</div>
 
       <div className="form-box-container">
+        <div className="box-container">
+          {contactData.map((contact, index) => (
+            <ContactBox key={index} {...contact} />
+          ))}
+        </div>
 
-
-
-
-
-
-      <div className="box-container">
-        {contactData.map((contact, index) => (
-          <ContactBox key={index} {...contact} />
-        ))}
-      </div>
-
-
-      <Form/>
-
-
+        <Form />
       </div>
 
       <Footer />
-
-
-
-      </>
+    </>
   );
 }
