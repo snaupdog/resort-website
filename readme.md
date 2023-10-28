@@ -17,7 +17,7 @@ REACT SETUP
 # Making your webpage
 
 
-    > All Seperate webpages are in the react folder
+    > All Seperate webpages are in the routes folder
 
     > Create a seperate webpage react file ex:contact.jsx
 
@@ -33,14 +33,4 @@ REACT SETUP
 
 
     
-
-
-
-
-* Make seperate components in components folder
-
-* routes folder will have each seperate webpage
-
-* put images in assests 
-
 
