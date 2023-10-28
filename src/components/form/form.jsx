@@ -44,8 +44,8 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <h2 className='form-heading1'>General Inquiry</h2>
+      <div className="form-container">
+        <h2 className="form-heading1">General Inquiry</h2>
         <form onSubmit={this.handleSubmit}>
           <table>
             <tbody>
@@ -74,7 +74,7 @@ class Form extends Component {
                 </td>
               </tr>
               <h3>Contact Information</h3>
-<hr />
+              <hr />
               <tr>
                 <td>
                   <input
@@ -125,26 +125,34 @@ class Form extends Component {
                   </select>
                 </td>
               </tr>
+
               <tr>
                 <td>
-                  <label htmlFor="subscribe">
+                  <label id ="cum" htmlFor="subscribe">
                     I would like to recieve OASIS'S newsletters and promotional
                     information
                   </label>
                 </td>
                 <td>
-                  <input
-                    type="checkbox"
-                    id="subscribe"
-                    name="subscribe"
-                    checked={this.state.subscribe}
-                    onChange={this.handleChange}
-                  />
+                  <div class="cntr">
+                    <input
+                      type="checkbox"
+                      id="cbx"
+                      class="hidden-xs-up"
+                      name="subscribe"
+                      checked={this.state.subscribe}
+                      onChange={this.handleChange}
+                    />
+                    <label for="cbx" class="cbx"></label>
+                  </div>
                 </td>
               </tr>
+
               <tr>
-                <td colSpan="2" style={{ textAlign: "center" }}>
-                  <button type="submit">Submit</button>
+                <td>
+                  <button type="submit" id='btn'>
+                    Submit
+                  </button>
                 </td>
               </tr>
             </tbody>
