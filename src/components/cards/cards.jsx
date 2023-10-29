@@ -6,6 +6,7 @@ export default function Cards() {
     beforeHover: {
       opacity: 0,
       y: 100,
+    
     },
 
     onHover: {

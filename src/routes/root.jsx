@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer.jsx";
 import Cards from '../components/cards/cards.jsx'
 import Header from '../components/header/header.jsx'
 
+import Est from "../components/test/est.jsx";
 
 
 export default function App() {
@@ -21,6 +22,10 @@ export default function App() {
       <Cards />
       </section>
 
+
+      <section>
+      <Est/>
+      </section>
 
 
 
