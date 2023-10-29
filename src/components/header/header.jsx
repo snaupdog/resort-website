@@ -8,7 +8,15 @@ import './header.css'
 
 export default function Header() {
   return (
-    <div className="header">
+    <motion.div className="header"
+
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      transition={{
+          duration:2
+      }}
+
+      >
       <Navbar />
 
        <motion.h4
@@ -17,8 +25,7 @@ export default function Header() {
 
        transition={{
          type: "tween",
-         duration: "1",
-         delay: "1"
+         duration: 2,
 
        }}
 
@@ -26,6 +33,11 @@ export default function Header() {
          This is a motion h4
       </motion.h4>
 
-    </div>
+
+      <div className="bal">
+
+      </div>
+
+    </motion.div>
   );
 }

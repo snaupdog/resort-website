@@ -10,7 +10,6 @@ import Header from '../components/header/header.jsx'
 export default function App() {
 
 
-
   return (
       <>
     <section className="scroller">
@@ -19,8 +18,10 @@ export default function App() {
       </section>
 
       <section>
-       <Cards/>
+      <Cards />
       </section>
+
+
 
 
       <section>

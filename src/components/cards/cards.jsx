@@ -1,23 +1,21 @@
 import "./cards.css";
 import { motion } from "framer-motion";
-import svgImage1 from "./arrow.svg";
 
 export default function Cards() {
   const CardVariants = {
     beforeHover: {
       opacity: 0,
+      y: 100,
     },
-    onHover: {
-      opacity: 0.5,
-      transition: {
-        duration: 0.7, // Set your desired duration in seconds
-      },
-    }
-  };
 
-  const TextVariants = {
-      hidden: { opacity: 0, scale: 4 ,y:-59},
-    visible: { opacity: 1, scale: 3 ,y:0},
+    onHover: {
+      opacity: 1,
+      y: 0,
+
+      transition: {
+        duration: 1.5, // Set your desired duration in seconds
+      },
+    },
   };
 
   return (
@@ -29,15 +27,14 @@ export default function Cards() {
           initial="beforeHover"
           whileHover="onHover"
         >
+          <p>
+            {" "}
+            <span>KOMODO</span>
+            <br />
+            Where dreams come to die, something along these lines
+          </p>
         </motion.div>
-          <motion.h1 className="appear-text" variants={TextVariants} initial='hidden' whileHover='visible'>
-            Please <br></br> show
-          </motion.h1>
-
       </div>
-
-
-
 
 
       <div className="box2">
@@ -46,8 +43,16 @@ export default function Cards() {
           variants={CardVariants}
           initial="beforeHover"
           whileHover="onHover"
-        ></motion.div>
+        >
+          <p>
+            {" "}
+            <span>KOMODO</span>
+            <br />
+            Where dreams come to die, something along these lines
+          </p>
+        </motion.div>
       </div>
+
 
       <div className="box3">
         <motion.div
@@ -55,8 +60,16 @@ export default function Cards() {
           variants={CardVariants}
           initial="beforeHover"
           whileHover="onHover"
-        ></motion.div>
+        >
+          <p>
+            {" "}
+            <span>KOMODO</span>
+            <br />
+            Where dreams come to die, something along these lines
+          </p>
+        </motion.div>
       </div>
+
 
       <div className="box4">
         <motion.div
@@ -64,8 +77,16 @@ export default function Cards() {
           variants={CardVariants}
           initial="beforeHover"
           whileHover="onHover"
-        ></motion.div>
+        >
+          <p>
+            {" "}
+            <span>KOMODO</span>
+            <br />
+            Where dreams come to die, something along these lines
+          </p>
+        </motion.div>
       </div>
+
     </motion.div>
   );
 }
