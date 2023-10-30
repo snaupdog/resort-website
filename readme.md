@@ -28,6 +28,12 @@ REACT SETUP
     >Images in assets
 
 
+[] landing page clippath
+[] parralax scroll
+[] footer links
+[] navbar styling
+[] database to store info of user
+
 
 
 
