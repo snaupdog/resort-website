@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer/footer.jsx";
 import Form from "../components/form/form.jsx";
-import "../styles/contact.css";
 import React from "react";
+import "../styles/contact.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -42,13 +42,16 @@ const contactData = [
 function ContactBox({ name, phone, email }) {
   return (
     <div className="contact-box">
-      <h3>{name}</h3>
-      <p>
+      <h3 className="h3-cbox">{name}</h3>
+      <h6 className="h6-cbox">
+
         <FontAwesomeIcon icon={faPhone} /> {phone}
-      </p>
-      <p>
+      </h6>
+
+      <h6 className="h6-cbox">
+
         <FontAwesomeIcon icon={faEnvelope} /> {email}
-      </p>
+      </h6>
     </div>
   );
 }

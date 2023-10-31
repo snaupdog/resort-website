@@ -10,7 +10,6 @@
 }
 
 .box-container {
-  /* border: 50px solid blanchedalmond; */
     margin-right: 50px;
 }
 
@@ -44,11 +43,11 @@
 
 }
 
- p ,h3{
+ .h3-cbox,.h6-cbox{
 
      padding:5px;
 }
 
-h3{
+.h3-cbox{
     color:#9C8E74;
 }
