@@ -1,9 +1,5 @@
-
-
-
-import Navbar from '../components/navbar/navbar.jsx'
-
-
+import "../styles/booking.css"
+import SolidNavbar from '../components/solid-navbar/solid-navbar.jsx'
 
 
 export default function Bookings(){
@@ -11,10 +7,10 @@ export default function Bookings(){
     return(
         <>
 
-        <Navbar/>
+        <SolidNavbar/>
 
 
-        <h1 style={{color:'black'}}>Bookigns</h1>
+        <h1 style={{color:'black'}}>Bookings</h1>
 
 
         </>
