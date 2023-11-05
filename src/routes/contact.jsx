@@ -44,12 +44,10 @@ function ContactBox({ name, phone, email }) {
     <div className="contact-box">
       <h3 className="h3-cbox">{name}</h3>
       <h6 className="h6-cbox">
-
         <FontAwesomeIcon icon={faPhone} /> {phone}
       </h6>
 
       <h6 className="h6-cbox">
-
         <FontAwesomeIcon icon={faEnvelope} /> {email}
       </h6>
     </div>

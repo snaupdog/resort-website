@@ -1,26 +1,24 @@
-*{
-    padding:0px;
-    margin:0px;
-} 
-
-.header{
-    background-color: #09253A;
-    width: 100%;
-    height: 10vh;
-
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-ul{
-    list-style-type:none;
-    display:block;
-    overflow:hidden;
-
+.solidnavbar-header {
+  background-color: #09253a;
+  width: 100%;
+  height: 10vh;
 }
 
-li {
-    margin-top: 25px;
-    float: left;
-    text-align: center;
-    padding: 5px 10px;
-    font-size: 18px;
+.solidnavbar-header ul {
+  list-style-type: none;
+  display: block;
+  overflow: hidden;
+}
+
+.solidnavbar-header li {
+  margin-top: 25px;
+  float: left;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 18px;
 }
