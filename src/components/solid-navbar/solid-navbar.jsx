@@ -6,8 +6,9 @@ export default function SolidNavbar() {
     <>
       <div className="solidnavbar-header">
         <ul>
+
           <li>
-            <Link to={`/contacts`}>Support</Link>
+            <Link to={`/`}>Home</Link>
           </li>
           <li>
             <Link to={`/bookings`}>Bookings</Link>
@@ -16,7 +17,7 @@ export default function SolidNavbar() {
             <Link to={`/facilities`}>Facilities</Link>
           </li>
           <li>
-            <Link to={`/`}>Home</Link>
+            <Link to={`/contacts`}>Support</Link>
           </li>
         </ul>
       </div>
