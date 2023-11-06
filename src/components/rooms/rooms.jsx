@@ -3,9 +3,15 @@ import { Outlet, Link } from "react-router-dom";
 
 const Rooms = ({ imageSrc, text }) => {
   return (
-    <div className="container">
-      <img src={imageSrc} alt={text} />
-      {/* <h4>{text}</h4> */}
+    <div className="roomsContainer">
+    <div>
+        <img className="imgDiv" src={imageSrc} alt={text} />
+    </div>
+      
+      <div className="textDiv">
+        <h3>{text}</h3>
+      </div>
+      
     </div>
   );
 };
