@@ -1,4 +1,0 @@
-prompt='nikitha:%1~/  %#'
-
-
-
