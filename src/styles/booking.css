@@ -1,14 +1,23 @@
 h2 {
-    height: 15vh;
+    height: 10vh;
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size:60px ;
-    color: #36454F ;    
+    /* color: #36454F ;     */
 }
 
-.bookingsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 85vh;
+.bookingContainer {
+    display: flex;
+}
+
+.infoContainer {
+    height: 90vh;
+    width: 75%;
+}
+
+.roomPics {
+    height: 90vh;
+    display: flex;
+    /* flex-direction: column; */
+    overflow-y: auto;
 }

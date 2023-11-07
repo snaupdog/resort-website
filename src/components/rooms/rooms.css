@@ -1,8 +1,10 @@
 .roomsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    height: 290px;
+    width: 450px;
 }
 
 .roomsContainer img{
@@ -10,6 +12,7 @@
     width: 450px;
     border-radius: 17px 17px 0px 0px;
     align-content: center;
+    overflow-y: auto;
 }
 
 .roomsContainer h3{
@@ -22,19 +25,21 @@
 .imgDiv {
     margin: none;
     padding: none;
-    border: 5px solid #f98125;
+    border: 5px solid #c75216;
     margin-bottom: -4px;
     border-bottom: none;
 }
 
 .textDiv {
-    background-color: #f98125;
+    background-color: #c75216;
     width: 450px;
     margin: none;
     padding: none;
-    border: 5px solid #f98125;
+    border: 5px solid #c75216;
     border-top: none;
     border-radius: 0px 0px 17px 17px; 
     padding-bottom: 17px;
     padding-top: 7px;
 }
+
+/* #5b84c4 */
