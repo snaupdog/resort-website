@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "./test.css";
 
 export default function Est() {
   const typingContainer = {
@@ -22,8 +23,7 @@ export default function Est() {
   };
 
   return (
-    <div
-      className="est-container">
+    <div className="est-container">
       <motion.h1
         className="text"
         variants={typingContainer}
