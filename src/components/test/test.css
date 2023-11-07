@@ -1,4 +1,4 @@
-est-container{
+.est-container{
 
     width: 100%;
     height: 100vh;
@@ -6,3 +6,8 @@ est-container{
 
 }
 
+
+.text{
+
+    font-size: 100px;
+}
