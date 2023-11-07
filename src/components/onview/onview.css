@@ -1,0 +1,32 @@
+.onview-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+  background-color: white;
+}
+
+.onview-section {
+  box-sizing: border-box;
+  width: 100%;
+  height: 101vh;
+  display: flex;
+  justify-content: space-evenly;
+
+  overflow: hidden;
+  padding: 50px;
+  /* background: #ff0055; */
+}
+
+.onview-section :nth-child(1) {
+  background: #f108a4;
+}
+
+.onview-section :nth-child(2) {
+  background: #bd19c8;
+}
+
+.onview-text {
+  font-size: 200px;
+}
