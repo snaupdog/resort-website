@@ -3,38 +3,54 @@
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  /* padding: 17px; */
+  height: 300px;
+  /* width: 500px; */
+
+  width: 90%;
+  overflow: hidden;
+
+  /* border: 10px solid yellow; */
 }
 
-.roomsContainer img{
-    height: 290px;
-    width: 450px;
-    border-radius: 17px 17px 0px 0px;
-    align-content: center;
+.roomsContainer img {
+  height: 240px;
+  width: 430px;
+  border-radius: 17px 17px 0px 0px;
+  align-content: center;
+  overflow: hidden;
+  object-fit: cover;
 }
 
-.roomsContainer h3{
-    font-family: 'Inter', sans-serif;
-    font-size: larger;
-    text-align: center;
-    margin: 0;
+.roomsContainer h3 {
+  font-family: "Inter", sans-serif;
+  font-size: larger;
+  text-align: center;
+  margin: 0;
 }
 
 .imgDiv {
-    margin: none;
-    padding: none;
-    border: 5px solid #f98125;
-    margin-bottom: -4px;
-    border-bottom: none;
+  margin: none;
+  padding: none;
+  border: 5px solid #c75216;
+  margin-bottom: -4px;
+  border-bottom: none;
+  overflow: hidden;
+
+  /* border: 10px solid pink; */
 }
 
 .textDiv {
-    background-color: #f98125;
-    width: 450px;
-    margin: none;
-    padding: none;
-    border: 5px solid #f98125;
-    border-top: none;
-    border-radius: 0px 0px 17px 17px; 
-    padding-bottom: 17px;
-    padding-top: 7px;
+  background-color: #c75216;
+  width: 430px;
+  margin: none;
+  padding: none;
+  border: 5px solid #c75216;
+  border-top: none;
+  border-radius: 0px 0px 17px 17px;
+  padding-bottom: 17px;
+  padding-top: 7px;
+  overflow: hidden;
 }
+
+/* #5b84c4 */
