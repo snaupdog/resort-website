@@ -48,7 +48,7 @@ export default function Bookings() {
         </div>
 
         <div className="infoContainer">
-          <h4>Has random info in it</h4>
+          <h4>info rendoer someone</h4>
         </div>
       </div>
 
