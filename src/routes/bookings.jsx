@@ -48,7 +48,7 @@ export default function Bookings() {
         </div>
 
         <div className="infoContainer">
-          <h4>pls work now atleast pls</h4>
+          <h4>this gay as thing better work</h4>
         </div>
       </div>
 
