@@ -48,7 +48,7 @@ export default function Bookings() {
         </div>
 
         <div className="infoContainer">
-          <h4>pls help</h4>
+          <h4>pls work now atleast pls</h4>
         </div>
       </div>
 
