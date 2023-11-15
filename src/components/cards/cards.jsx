@@ -6,7 +6,6 @@ export default function Cards() {
     beforeHover: {
       opacity: 0,
       y: 100,
-    
     },
 
     onHover: {
@@ -28,7 +27,7 @@ export default function Cards() {
           initial="beforeHover"
           whileHover="onHover"
         >
-          <p>
+          <p className="cards-para">
             {" "}
             <span>KOMODO</span>
             <br />
@@ -36,7 +35,6 @@ export default function Cards() {
           </p>
         </motion.div>
       </div>
-
 
       <div className="box2">
         <motion.div
@@ -45,7 +43,7 @@ export default function Cards() {
           initial="beforeHover"
           whileHover="onHover"
         >
-          <p>
+          <p className="cards-para">
             {" "}
             <span>KOMODO</span>
             <br />
@@ -53,7 +51,6 @@ export default function Cards() {
           </p>
         </motion.div>
       </div>
-
 
       <div className="box3">
         <motion.div
@@ -62,7 +59,7 @@ export default function Cards() {
           initial="beforeHover"
           whileHover="onHover"
         >
-          <p>
+          <p className="cards-para">
             {" "}
             <span>KOMODO</span>
             <br />
@@ -70,7 +67,6 @@ export default function Cards() {
           </p>
         </motion.div>
       </div>
-
 
       <div className="box4">
         <motion.div
@@ -79,7 +75,7 @@ export default function Cards() {
           initial="beforeHover"
           whileHover="onHover"
         >
-          <p>
+          <p className="cards-para">
             {" "}
             <span>KOMODO</span>
             <br />
@@ -87,7 +83,6 @@ export default function Cards() {
           </p>
         </motion.div>
       </div>
-
     </motion.div>
   );
 }

@@ -1,5 +1,12 @@
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer/footer.jsx";
+import imgswim from "./../assets/swimming.jpg";
+import imggym from "./../assets/gym1.jpg";
+import imgspa from "./../assets/spa.jpeg";
+// import imgswim from "./../assets/swimming.jpg";
+// import imgswim from "./../assets/swimming.jpg";
+// import imgswim from "./../assets/swimming.jpg";
+
 import "../styles/facilities.css";
 export default function Facilities() {
   return (
@@ -16,15 +23,15 @@ export default function Facilities() {
       <div className="size20vh" />
       <div className="facilities_container">
         <div className="activities">
-          <img src="img/gym1.jpg" />
+          <img src={imgswim} />
           <p>Gym</p>
         </div>
         <div className="activities">
-          <img src="img/swimming.jpg" />
+          <img src={imggym} />
           <p>Swimming Pool</p>
         </div>
         <div className="activities">
-          <img src="img/spa.jpeg" />
+          <img src={imgspa} />
           <p>Spa</p>
         </div>
         <div className="activities">

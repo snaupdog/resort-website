@@ -1,5 +1,6 @@
 import "../styles/App.css";
 
+import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer/footer.jsx";
 import Cards from "../components/cards/cards.jsx";
 import Est from "../components/home-header/est.jsx";
@@ -11,6 +12,10 @@ export default function App() {
     <>
       <section>
         <Est />
+      </section>
+
+      <section>
+        <Navbar />
       </section>
 
       <section>
