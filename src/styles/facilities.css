@@ -29,7 +29,7 @@
 
 .activities img {
   height: 190px;
-  width: 350;
+  width: 350px;
   border-radius: 20px;
   align-content: center;
 }
@@ -68,7 +68,7 @@
   width: 100vw;
   background-color: black;
   margin: 0rem;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .image-track img {
