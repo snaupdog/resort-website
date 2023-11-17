@@ -9,7 +9,7 @@ export default function Bookings() {
     <>
       <SolidNavbar />
       <Background />
-      <h2>Rooms & Rates</h2>
+      <h2 className="bookings-h2">Rooms & Rates</h2>
 
       <div className="bookingContainer">
         <div className="roomPics">

@@ -1,9 +1,9 @@
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer/footer.jsx";
-import imgboat from "./../assets/boat.jpeg"
+import imgboat from "./../assets/boat.jpeg";
 import imgswim from "./../assets/swimming.jpg";
 import imgconf from "./../assets/conference.jpeg";
-import imgsurf from "./../assets/surfing.jpeg"
+import imgsurf from "./../assets/surfing.jpeg";
 import imggym from "./../assets/gym1.jpg";
 import imgspa from "./../assets/spa.jpeg";
 // import imgswim from "./../assets/swimming.jpg";
@@ -38,21 +38,21 @@ export default function Facilities() {
           <p>Spa</p>
         </div>
         <div className="activities">
-        <img src={imgboat} />
+          <img src={imgboat} />
           <p>Boat Tours</p>
         </div>
         <div className="activities">
-        <img src={imgconf} />
+          <img src={imgconf} />
           <p>Conference Room</p>
         </div>
         <div className="activities">
-        <img src={imgsurf} />
+          <img src={imgsurf} />
           <p>Surfing Lessons</p>
         </div>
       </div>
       <div className="secbody">
         <div className="image-track">
-          <img clas="img" src={imgboat} />
+          <img className="img" src={imgboat} />
           <img className="img" src={imgboat} />
           <img className="img" src={imgconf} />
           <img className="img" src={imgspa} />

@@ -45,43 +45,24 @@
   font-size: 50px;
   color: #36454f;
 }
-
-#footer {
-  width: 100%;
-  height: 10vh;
-  background-color: #09253a;
-}
-.scrollbar {
-  background: white;
-  overflow: scroll;
-  display: flex;
-  width: 100%;
-  height: 75vh;
-}
-.scrollbar img {
-  min-height: 25%;
-  min-width: 10%;
-}
-
 .secbody {
-  height: 100vh;
-  width: 100vw;
+  height: 60vh; /* Adjust the height to your preference */
+  width: 100%;
   background-color: black;
-  margin: 0rem;
-  overflow: scroll;
-}
-
-.image-track img {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: center;
+  overflow-x: scroll;
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
 }
 
 .image-track {
-  display: flex;
+  display: inline-flex; /* Use inline-flex to keep images in a single line */
   gap: 4vmin;
-  position: absolute;
-  top: 200%;
-  left: 10%;
+  padding: 10px; /* Adjust padding if necessary */
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.image-track img {
+  max-height: 56vmin; /* Set max-height to maintain aspect ratio */
+  width: auto; /* Allow the width to adjust based on the height */
+  object-fit: cover;
+  object-position: center;
 }
