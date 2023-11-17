@@ -19,7 +19,7 @@ export default function Cards() {
   };
 
   return (
-    <motion.div className="container">
+    <motion.div className="main-card-container">
       <div className="box1">
         <motion.div
           className="backdrop"
@@ -29,9 +29,11 @@ export default function Cards() {
         >
           <p className="cards-para">
             {" "}
-            <span>KOMODO</span>
+            <span>BEACHES</span>
             <br />
-            Where dreams come to die, something along these lines
+            Dip your toes into luxury on our pristine beaches, where golden
+            sands meet the turquoise embrace of the sea. Let the rhythmic waves
+            serenade you as you relax under the sun's warm glow.
           </p>
         </motion.div>
       </div>
@@ -45,9 +47,11 @@ export default function Cards() {
         >
           <p className="cards-para">
             {" "}
-            <span>KOMODO</span>
+            <span>CULTURES</span>
             <br />
-            Where dreams come to die, something along these lines
+            Discover the allure of ancient temples and historic marvels
+            surrounding our resort, each echoing with tales of a rich cultural
+            legacy
           </p>
         </motion.div>
       </div>
@@ -61,9 +65,11 @@ export default function Cards() {
         >
           <p className="cards-para">
             {" "}
-            <span>KOMODO</span>
+            <span>TEMPLES</span>
             <br />
-            Where dreams come to die, something along these lines
+            Embark on a journey through time as you explore nearby historic
+            sites, where the echoes of bygone eras resonate through captivating
+            architecture and storied landmarks.
           </p>
         </motion.div>
       </div>
@@ -77,9 +83,11 @@ export default function Cards() {
         >
           <p className="cards-para">
             {" "}
-            <span>KOMODO</span>
+            <span>DINING</span>
             <br />
-            Where dreams come to die, something along these lines
+            Satisfy your palate with culinary perfection at our resort's dining
+            havens, where world-class chefs orchestrate a symphony of flavors
+            using the freshest local ingredients.
           </p>
         </motion.div>
       </div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./test.css";
 
-import img1 from "../../assets/map.webp";
+import img1 from "../../assets/random-temple.jpg";
 export default function Est() {
   const typingContainer = {
     hidden: { opacity: 0 },
@@ -71,7 +71,7 @@ export default function Est() {
           initial="hidden"
           animate="show"
         >
-          {Array.from("where blah blah eats blah blah").map((word, i) => (
+          {Array.from("A destination of its own").map((word, i) => (
             <motion.span key={i} variants={typingText}>
               {word}
             </motion.span>
