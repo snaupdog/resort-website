@@ -145,8 +145,8 @@ hr {
 
 
 
-/* button */
-button {
+/* #btn */
+#btn {
  padding: 15px 25px;
  border: unset;
  border-radius: 15px;
@@ -162,7 +162,7 @@ button {
  overflow: hidden;
 }
 
-button::before {
+#btn::before {
  content: "";
  position: absolute;
  top: 0;
@@ -177,10 +177,10 @@ button::before {
  transition: all 250ms
 }
 
-button:hover {
+#btn:hover {
  color: #e8e8e8;
 }
 
-button:hover::before {
+#btn:hover::before {
  width: 100%;
 }
