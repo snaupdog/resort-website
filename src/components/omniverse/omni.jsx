@@ -30,9 +30,9 @@ function Farmer() {
 }
 
 export default function Omni() {
+  // <Onview />
   return (
     <div className="omni-container">
-      <Onview />
       <Farmer />
     </div>
   );
