@@ -26,3 +26,8 @@
   overflow: hidden;
 
 }
+
+#checkout{
+  padding: 18px;
+  border-radius: 10px;
+}
