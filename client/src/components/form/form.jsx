@@ -34,7 +34,7 @@ class Form extends Component {
       );
 
       console.log("Form Submitted Succesfully", response.data);
-      alert("Form Submitted Succesfully... n");
+      alert("Form Submitted Succesfully...");
       window.location.reload();
     } catch (error) {
       console.error("Error Submitting Form:", error);

@@ -31,7 +31,7 @@ app.post("/formdata", async (req, res) => {
   try {
     const data = req.body;
     const db = client.db("Oasis");
-    const collection = db.collection("Contact");
+    const collection = db.collection("CONTACTA");
     const result = await collection.insertOne(data);
 
     if (result.acknowledged) {
