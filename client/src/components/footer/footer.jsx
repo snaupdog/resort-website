@@ -11,15 +11,13 @@ export default function Footer() {
       </h1>
       <div className="footer-links1">
         <ul>
-          <li>blsadjasdad asdas</li>
-          <li>asdasdas sdaad</li>
-          <li>dsadadsad sad</li>
+          <li>Contact: +62 361730361</li>
+          <li>Email:oasisresorts@oasis.com</li>
         </ul>
       </div>
       <div className="footer-socials">
         <ul>
           <li>instagram</li>
-          <li>facebook</li>
           <li>twitter</li>
         </ul>
       </div>

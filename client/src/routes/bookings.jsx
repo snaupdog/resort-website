@@ -62,7 +62,15 @@ export default function Bookings() {
       </div>
         
       <div className="checkout">
-        <button id="checkout">Checkout</button>
+      
+        <div className="move">
+
+        </div>
+
+        <div className="move2">
+          <button id="checkout">Checkout</button>
+        </div>
+        
       </div>
 
       <Footer />

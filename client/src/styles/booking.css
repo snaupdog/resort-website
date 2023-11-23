@@ -32,3 +32,16 @@
   padding: 18px;
   border-radius: 10px;
 }
+
+.checkout {
+  display: flex;
+}
+
+.move {
+  width: 90%;
+}
+
+.move2 {
+  width: 10vh;
+  text-align: right;
+}
