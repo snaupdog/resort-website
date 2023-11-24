@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 const { MongoClient } = require("mongodb");
 
 const app = express();
-const port = 3001;
+const port = 3005;
 
 const url = "mongodb://localhost:27017";
 const client = new MongoClient(url);
@@ -27,7 +27,7 @@ app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
-app.post("/formdata", async (req, res) => {
+app.post("/Checkoutdata", async (req, res) => {
   try {
     const data = req.body;
     const db = client.db("Oasis");
