@@ -6,16 +6,16 @@ export default function Navbar() {
     <div className="navbar">
       <ul>
         <li>
-          <Link to={`/contacts`}>Support</Link>
-        </li>
-        <li>
-          <Link to={`/bookings`}>Bookings</Link>
+          <Link to={`/`}>Home</Link>
         </li>
         <li>
           <Link to={`/facilities`}>Facilities</Link>
         </li>
         <li>
-          <Link to={`/`}>Home</Link>
+          <Link to={`/bookings`}>Bookings</Link>
+        </li>
+        <li>
+          <Link to={`/contacts`}>Support</Link>
         </li>
       </ul>
     </div>

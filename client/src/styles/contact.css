@@ -1,5 +1,4 @@
-
-.form-box-container {
+.formm-box-container {
   width: 100%;
   height: 150vh;
   display: flex;
@@ -9,14 +8,14 @@
   /* border: 50px solid green; */
 }
 
-.box-container {
-    margin-right: 50px;
+.papa-container {
+  margin-right: 50px;
 }
 
 .contact-box {
   background-color: #faf9f8;
-  width: 250px;
-  height: 80px;
+  width: 300px;
+  height: 150px;
   border: 10px solid white; /* Specify border width and style */
   padding: 10px;
   padding-left: 15px;
@@ -40,14 +39,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
- .h3-cbox,.h6-cbox{
-
-     padding:5px;
+.h3-cbox,
+.h6-cbox {
+  padding: 5px;
 }
 
-.h3-cbox{
-    color:#9C8E74;
+.h3-cbox {
+  color: #9c8e74;
 }

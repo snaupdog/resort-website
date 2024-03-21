@@ -1,33 +1,37 @@
-
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-  font-family: "Croissant One", Verdana, Geneva, Tahoma, sans-serif;
-  position :absolute;
-  top:0px;
-  left:0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
 }
 
 ul {
-  /* background-color: #dddddd; */
-
   list-style-type: none;
-  display: block;
-  overflow: hidden;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 40px;
 }
 
 .navbar li {
-  float: right;
-  text-align: center;
-  padding: 5px 10px;
+  margin-right: 70px; /* Add spacing between navbar items */
 }
 
 .navbar a {
-  display: block;
-  padding: 30px;
   text-decoration: none;
-  color: black;
+
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #007bff;
 }

@@ -47,12 +47,10 @@ class Checkout extends Component {
   };
 
   calculatePrice = () => {
-    // You can define your pricing logic here based on the number of days, adults, and children
-    // For simplicity, let's assume a fixed price per night and per person
-    const pricePerNight = 250; // Adjust this based on your actual pricing
-    const { noofadults, noofdays } = this.state;
+    const pricePerNight = 250;
+    const { noofadults, noofdays, noofchildren } = this.state;
     const adultaddon = (parseInt(noofadults) - 1) * 100;
-    const childaddon = parseInt(noofadults) * 50;
+    const childaddon = parseInt(noofchildren) * 50;
     const baseprice = pricePerNight * noofdays;
     const totalPrice = baseprice + adultaddon + childaddon;
     return totalPrice;
@@ -61,117 +59,89 @@ class Checkout extends Component {
   render() {
     const totalPrice = this.calculatePrice();
     return (
-      <div className="form-container">
-        <h2 className="form-heading1">Checkout</h2>
-        <form onSubmit={this.handleSubmit}>
-          <table>
-            <tbody>
-              <h3>Personal Info</h3>
-              <hr />
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Full Name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Phone Number"
-                    value={this.state.phoneNumber}
-                    onChange={this.handleChange}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <select
-                    id="chooseRooms"
-                    name="chooseRooms"
-                    value={this.state.chooseRooms}
-                    onChange={this.handleChange}
-                  >
-                    <option value="Room1">Cove view Retreat</option>
-                    <option value="Room2">Sunrise Suite</option>
-                    <option value="Room3"> Beachfront Bliss</option>
-                  </select>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <label htmlFor="noofrooms">Number of Adults:</label>
-                  <input
-                    type="number"
-                    id="noofadults"
-                    name="noofadults"
-                    min="1"
-                    max="2"
-                    value={this.state.noofadults}
-                    onChange={this.handleChange}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <label htmlFor="noofrooms">Number of Childeren:</label>
-                  <input
-                    type="number"
-                    id="noofchildren"
-                    name="noofchildren"
-                    min="1"
-                    max="3"
-                    value={this.state.noofchildren}
-                    onChange={this.handleChange}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label htmlFor="noofdays">Number of Days:</label>
-                  <input
-                    type="number"
-                    id="noofdays"
-                    name="noofdays"
-                    min="1"
-                    max="10" // Adjust the maximum number of days based on your requirement
-                    value={this.state.noofdays}
-                    onChange={this.handleChange}
-                  />
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <p>Total Price: ${totalPrice}</p>
-                  <p>
-                    {" "}
-                    Min Adult : - 2 Min Child :- 3 Extra charge per ADULT :-
-                    $100 CHILDREN :-$50{" "}
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <button type="submit" id="btn">
-                    Submit
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <div className="checkout-container">
+        <h2 className="checkout-heading">Checkout</h2>
+        <form onSubmit={this.handleSubmit} className="checkout-form">
+          <div className="form-group">
+            <label htmlFor="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="phoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              value={this.state.phoneNumber}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="chooseRooms">Choose Room</label>
+            <select
+              id="chooseRooms"
+              name="chooseRooms"
+              value={this.state.chooseRooms}
+              onChange={this.handleChange}
+            >
+              <option value="">Select Room</option>
+              <option value="Room1">Cove view Retreat</option>
+              <option value="Room2">Sunrise Suite</option>
+              <option value="Room3">Beachfront Bliss</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label htmlFor="noofadults">Number of Adults</label>
+            <input
+              type="number"
+              id="noofadults"
+              name="noofadults"
+              min="1"
+              max="2"
+              value={this.state.noofadults}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="noofchildren">Number of Children</label>
+            <input
+              type="number"
+              id="noofchildren"
+              name="noofchildren"
+              min="0"
+              max="3"
+              value={this.state.noofchildren}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="noofdays">Number of Days</label>
+            <input
+              type="number"
+              id="noofdays"
+              name="noofdays"
+              min="1"
+              max="10"
+              value={this.state.noofdays}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <p className="total-price">Total Price: ${totalPrice}</p>
+          </div>
+          <div className="form-group">
+            <button type="submit" className="submit-button">
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     );

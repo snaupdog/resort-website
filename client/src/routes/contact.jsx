@@ -61,8 +61,8 @@ export default function Contact() {
 
       <div className="header-contact">Contact us pls</div>
 
-      <div className="form-box-container">
-        <div className="box-container">
+      <div className="formm-box-container">
+        <div className="papa-container">
           {contactData.map((contact, index) => (
             <ContactBox key={index} {...contact} />
           ))}

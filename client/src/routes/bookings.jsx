@@ -1,5 +1,5 @@
 import "../styles/booking.css";
-import SolidNavbar from "../components/solid-navbar/solid-navbar.jsx";
+import Navbar from "../components/navbar/navbar.jsx";
 import Background from "../components/background/background.jsx";
 import Rooms from "../components/rooms/rooms.jsx";
 import Footer from "../components/footer/footer.jsx";
@@ -8,7 +8,7 @@ import Checkout from "../components/checkout/checkout.jsx";
 export default function Bookings() {
   return (
     <>
-      <SolidNavbar />
+      <Navbar />
       <Background />
 
       <div className="booking-container-main">
@@ -43,7 +43,9 @@ export default function Bookings() {
         </div>
       </div>
 
-      <Checkout />
+      <div className="shitty">
+        <Checkout />
+      </div>
       <Footer />
     </>
   );
